@@ -327,5 +327,30 @@ button[title='Log in']:hover {
     background-color: #c70101;
   }
 
+  .footer {
+      grid-area: footer;
+      display: flex;
+      justify-content: space-between;
+      background-color: #1a1a1a;
+      padding: 0.7rem 2rem;
+      border-top: #707070 1px solid;
+  }
 
+  .footerLinks a {
+    position: relative;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 2rem;
+  }
 
+  .copy {
+    font-size: .875rem;
+    color: #707070;
+  }
+
+  .footerLinks a:hover {
+      cursor: pointer;
+      border-bottom: 1px solid #fff;
+  }
+  
