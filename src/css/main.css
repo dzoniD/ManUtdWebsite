@@ -2,8 +2,8 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1vw;
-    background-color:#f2f2f2;
-    ;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
 .grid-container {
@@ -175,13 +175,13 @@ img {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 20px auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 20px auto;
 }
 
 .container h3 {
-  text-align: left;
+    text-align: left;
 }
 
 .matchCards {
@@ -191,53 +191,141 @@ img {
 }
 
 .singleCard {
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
-  background-color: white;
-  width: 20%;
-  height: 350px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    background-color: white;
+    width: 20%;
+    height: 350px;
 }
+
 .singleCard h3 {
-  display: inline-block;
-  margin-top: 10px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .singleCard img {
-  display: block;
-  margin: 20px auto 0 auto;
-  padding-left: 0;
+    display: block;
+    margin: 20px auto 0 auto;
+    padding-left: 0;
 }
 
 .singleCard p {
-  margin:0;
+    margin: 0;
 }
 
-.PLBlack{
-  width: 150px;
-  
+.PLBlack {
+    width: 150px;
+
 }
 
 
 .singleCardTeams {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
 .singleCardTeams p {
-  position: relative;
-  bottom: 10px;
-  background: #707070;
-  color: #fff;
-  margin-top: 35px;
-  padding: 10px;
-  font-size: 1.3rem;
-  font-weight: bold;
- 
+    position: relative;
+    bottom: 10px;
+    background: #707070;
+    color: #fff;
+    margin-top: 35px;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+
 }
 
 .singleCardTeams img {
-  height: 60px;
-  margin-bottom: 0px;
-  padding: 0 10px;
+    height: 60px;
+    margin-bottom: 0px;
+    padding: 0 10px;
 }
+
+.social {
+    grid-area: social;
+    text-align: center;
+}
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#403734,#2a2a2a); 
+  padding: 50px 38px;
+}
+.socialIcons div {
+  width: 35%;
+}
+.socialIcons ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 1.5%;
+    margin-right: 5%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    text-align: center;
+}
+
+.socialIcons li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    background-color: #3f3f3f;
+    border-radius: 50%;
+    padding: 10px 15px;
+    /* font-weight: bold; */
+}
+
+.socialIcons #fb {
+  padding: 10px 20px;
+}
+
+.socialButtons {
+  width: auto;
+}
+
+.socialButtons button {
+  padding: 10px 27px;
+  margin: 15px 3px;
+}
+
+button[title='Sign up']{
+  background-color: #c80101;
+  color: #fff;
+  border: none;
+  border-radius: 14% 86% 19% 81% / 98% 0% 100% 2% ;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: SourceSansProSemiBold;
+}
+
+button[title='Log in']{
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 14% 86% 19% 81% / 98% 0% 100% 2% ;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: SourceSansProSemiBold;
+}
+
+button[title='Sign up']:hover{
+    cursor: pointer;
+    background-color: #9b0000;
+}
+
+button[title='Log in']:hover {
+    cursor: pointer;
+    background-color: #707070;
+}
+
+.socialIcons li a:hover {
+    background-color: #c70101;
+  }
+
+
+
