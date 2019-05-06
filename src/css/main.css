@@ -424,7 +424,6 @@ padding-bottom: 1%;
 
 input,
 select {
-    /* font-family: 'Quicksand', sans-serif; */
     width: 23rem;
     font-size: 1vw;
     padding: 12px 20px;
@@ -462,4 +461,15 @@ label {
 .form button:hover{
     cursor: pointer;
     background-color: #9b0000;
+}
+.form p {
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+}
+.form a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border-bottom: 1px solid black;
 }
