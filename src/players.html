@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="js/vendor/jquery.js"></script>
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="main.js" defer></script>
+    <title>Manchester United</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/Header-Logo.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./players.html">Players</a></li>
+                <li><a href="#">Fixtures</a></li>
+                <li><a href="#">My United</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </div>
+        <div class="menu-right">
+            <div class="proba">
+                <a href="login.html"><i title='Login' class="far fa-user fa-lg"></i></a>
+                <a href="#"><i title="Search" class="fas fa-search fa-lg"></i></a>
+                <span class="lang"><i title="Language" class="fas fa-globe fa-lg"> EN</i></span>
+            </div>
+        </div>
+        <div class="mainPlayers">
+            <div class="container">
+                <h3>GOALKEEPERS</h3>
+                <hr>
+                <div class="playersCards">
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/De Hea.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>1</h3>
+                            <p>David <br>De Hea</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Lee Grant.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>13</h3>
+                            <p>Lee <br>Grant</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Pereira.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>40</h3>
+                            <p>Joel <br>Pereira</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Romero.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>22</h3>
+                            <p>Sergio <br>Romero</p>
+
+                        </div>
+                    </div>
+                </div>
+                <h3>DEFENDERS</h3>
+                <hr>
+                <div class="playersCards">
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Lindelof.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>2</h3>
+                            <p>Victor <br>Lindelof</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Bailey.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>3</h3>
+                            <p>Eric <br>Bailey</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Johnes.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>4</h3>
+                            <p>Phil <br>Johnes</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Smalling.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>12</h3>
+                            <p>Chris <br>Smalling</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Rojo.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>16</h3>
+                            <p>Marcos <br>Rojo</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Young.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>18</h3>
+                            <p>Ashley <br>Young</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Dalot.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>20</h3>
+                            <p>Diogo <br>Dalot</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Shaw.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>23</h3>
+                            <p>Luke <br>Shaw</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Fosu-Mensah.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>24</h3>
+                            <p>Tim <br>Fosu-Mensah</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Valensija.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>25</h3>
+                            <p>Antonio <br>Valencia</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Darmian.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>36</h3>
+                            <p>Mateo <br>Darmian</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Tuanzebe.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>38</h3>
+                            <p>Axel <br>Tuanzebe</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <h3>MIDFIELDERS</h3>
+                <hr>
+                <div class="playersCards">
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Pogba.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>6</h3>
+                            <p>Paul <br>Pogba</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Mata.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>8</h3>
+                            <p>Juan <br>Mata</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Lingard.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>14</h3>
+                            <p>Jese <br>Lingard</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/AndresPereira.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>15</h3>
+                            <p>Andreas <br>Pereira</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Fred.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>17</h3>
+                            <p>Fred </p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Herera.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>21</h3>
+                            <p>Ander <br>Herrera</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Matic.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>31</h3>
+                            <p>Nemanja <br>Matic</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/MekTomini.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>38</h3>
+                            <p>Scott <br>McTominay</p>
+
+                        </div>
+                    </div>
+                </div>
+                <h3>FORWARDS</h3>
+                <hr>
+                <div class="playersCards">
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Sanchez.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>7</h3>
+                            <p>Alexis <br>Sanchez</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Lukaku.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>9</h3>
+                            <p>Romelu <br>Lukaku</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Ra[ford.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>10</h3>
+                            <p>Marcus <br>Rashford</p>
+
+                        </div>
+                    </div>
+                    <div id="singlePlayerCard">
+                        <img class="Hea" src="img/Marsijal.jpg" alt="">
+
+                        <div class="singleCardText">
+                            <h3>11</h3>
+                            <p>Anthony <br>Martial</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="socialIcons">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socialButtons">
+                    <button type="button" title="Log in">Log In</button>
+                    <button type="button" title="Sign up">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerLinks">
+                <a href="#">Contact Us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Accessibility</a>
+            </div>
+            <div class="copy">&copy; 2019 Nikola Muncan</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

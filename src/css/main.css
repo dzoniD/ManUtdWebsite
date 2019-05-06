@@ -16,10 +16,11 @@ body {
     grid-area: logo;
     background: #c70101;
     position: sticky;
-
+    top: 0;
+    z-index: 1;
 }
 
-img {
+.logo img {
     width: 60px;
     height: auto;
     padding-left: 10vw;
@@ -30,6 +31,8 @@ img {
     grid-area: menu;
     background: #c70101;
     position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .menu ul li {
@@ -84,6 +87,8 @@ img {
     color: #fff;
     position: sticky;
     transition: all .2s ease-in-out;
+    top: 0;
+    z-index: 1;
 }
 
 .menu-right i {
@@ -128,6 +133,8 @@ img {
 }
 
 #timer img {
+    width: 60px;
+    height: auto;
     padding-left: 0px;
 }
 
@@ -248,16 +255,18 @@ img {
     text-align: center;
 }
 
-.socialIcons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(#403734,#2a2a2a); 
-  padding: 50px 38px;
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#403734, #2a2a2a);
+    padding: 50px 38px;
 }
+
 .socialIcons div {
-  width: 35%;
+    width: 35%;
 }
+
 .socialIcons ul li {
     list-style-type: none;
     display: inline-block;
@@ -281,39 +290,39 @@ img {
 }
 
 .socialIcons #fb {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 .socialButtons {
-  width: auto;
+    width: auto;
 }
 
 .socialButtons button {
-  padding: 10px 27px;
-  margin: 15px 3px;
+    padding: 10px 27px;
+    margin: 15px 3px;
 }
 
-button[title='Sign up']{
-  background-color: #c80101;
-  color: #fff;
-  border: none;
-  border-radius: 14% 86% 19% 81% / 98% 0% 100% 2% ;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: SourceSansProSemiBold;
+button[title='Sign up'] {
+    background-color: #c80101;
+    color: #fff;
+    border: none;
+    border-radius: 14% 86% 19% 81% / 98% 0% 100% 2%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: SourceSansProSemiBold;
 }
 
-button[title='Log in']{
-  background-color: #1a1a1a;
-  color: #fff;
-  border: 0.5px solid #fff;
-  border-radius: 14% 86% 19% 81% / 98% 0% 100% 2% ;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: SourceSansProSemiBold;
+button[title='Log in'] {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 0.5px solid #707070;
+    border-radius: 14% 86% 19% 81% / 98% 0% 100% 2%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: SourceSansProSemiBold;
 }
 
-button[title='Sign up']:hover{
+button[title='Sign up']:hover {
     cursor: pointer;
     background-color: #9b0000;
 }
@@ -325,32 +334,79 @@ button[title='Log in']:hover {
 
 .socialIcons li a:hover {
     background-color: #c70101;
-  }
+}
 
-  .footer {
-      grid-area: footer;
-      display: flex;
-      justify-content: space-between;
-      background-color: #1a1a1a;
-      padding: 0.7rem 2rem;
-      border-top: #707070 1px solid;
-  }
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 0.7rem 2rem;
+    border-top: #707070 1px solid;
+}
 
-  .footerLinks a {
+.footerLinks a {
     position: relative;
     text-decoration: none;
     text-transform: capitalize;
     color: #fff;
     margin: 2rem;
-  }
+}
 
-  .copy {
+.copy {
     font-size: .875rem;
     color: #707070;
-  }
+}
 
-  .footerLinks a:hover {
-      cursor: pointer;
-      border-bottom: 1px solid #fff;
-  }
-  
+.footerLinks a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.mainPlayers {
+    grid-area: main;
+
+}
+
+.playersCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ 
+#singlePlayerCard {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.10);
+    background-color: #f2f2f2;
+    width: 20%;
+    height: 350px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    transition: transform .6s;
+}
+#singlePlayerCard:hover {
+    transform: scale(1.1); 
+}
+
+#singlePlayerCard img {
+    max-width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.singleCardText p {
+    position: relative;
+    margin: unset;
+    background: #707070;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.singleCardText h3{
+    margin-left: 10px;
+    color: #2a2a2a;
+    display: inline;
+    border-bottom: #9b0000 solid;
+}
