@@ -1,3 +1,31 @@
 {
-  
+  "players": [{
+      "name": "David",
+      "lastName": "De Head",
+      "jerseyNo": "1",
+      "imgUrl": "img/De Hea.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Lee",
+      "lastName": "Grant",
+      "jerseyNo": "13",
+      "imgUrl": "img/Lee Grant.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Joel",
+      "lastName": "Pereira",
+      "jerseyNo": "40",
+      "imgUrl": "img/img/Pereira.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Sergio",
+      "lastName": "Romero",
+      "jerseyNo": "22",
+      "imgUrl": "img/Romero.jpg",
+      "id": "4"
+    }
+  ]
 }
